@@ -1,19 +1,19 @@
 name: Run Backup Script
 
 on:
-	push:
-		branches: [ main ]
+  push:
+    branches: [ main ]
 
 jobs:
-	run-backup:
-		runs-on: ubuntu-latest
+  run-backup:
+    runs-on: ubuntu-latest
 
-		steps:
-			- name: Checkout code
-			  uses: actions/checkout@v4
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-			- name: Make script executable
-			  run: chmod +x backup_logs.sh
+      - name: Make script executable
+        run: chmod +x backup_logs.sh
 
-			- name: Run backup script
-			  run: ./backup_logs.sh
+      - name: Run backup script
+        run: ./backup_logs.sh
