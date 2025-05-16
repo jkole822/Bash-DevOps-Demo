@@ -2,7 +2,7 @@
 
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 BACKUP_DIR="./backups"
-SOURCE_DIR="/var/log"
+SOURCE_DIR="./test-logs"
 LOG_FILE="./backup.log"
 DRY_RUN=false
 
